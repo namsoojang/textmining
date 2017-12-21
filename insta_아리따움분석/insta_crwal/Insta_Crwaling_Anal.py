@@ -39,13 +39,10 @@ get_ipython().magic('matplotlib inline')
 # In[ ]:
 
 def load_crwal_datas(fname):
-    cpath = ""
-    for p in fname:
-        if ord(p) <= 255:
-            cpath += p
-    datas = pd.read_csv(cpath)
-    return datas
 
+    datas = pd.read_csv(fname)
+	
+    return datas
 
 # In[1]:
 
